@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.delta_apdev_rgb.MainActivity"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#000000"
+
+    >
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/mainview"
+
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+   >
+
+
+
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_weight="9"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+    <Button
+
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RED"
+        android:layout_weight="1"
+
+        android:layout_gravity="center_horizontal"
+        android:onClick="red_change"/>
+
+        <Button
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLUE"
+            android:layout_gravity="center_horizontal"
+            android:onClick="blue_change"/>
+
+        <Button
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GREEN"
+
+            android:layout_gravity="center_horizontal"
+            android:onClick="green_change"/>
+        </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FF7043"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RED"
+            android:layout_weight="1"
+            android:id="@+id/rvalue"
+            android:layout_gravity="center_horizontal"
+           />
+
+        <Button
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLUE"
+            android:id="@+id/bvalue"
+            android:layout_gravity="center_horizontal"
+           />
+
+        <Button
+            android:layout_margin="8dp"
+            android:id="@+id/gvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GREEN"
+
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="24dp"
+        android:text="Reset"
+        android:onClick="reset"
+
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"/>
+</LinearLayout>
+</LinearLayout>
+
